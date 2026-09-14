@@ -1,6 +1,4 @@
 manifest:
-  defaults:
-    revision: v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -8,10 +6,11 @@ manifest:
       url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: urob
+      remote: zmkfirmware
+      revision: v0.3 # Set to desired ZMK release.
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
-      revision: v0.3
+      revision: v0.3 # Should match ZMK release.
   self:
     path: config
