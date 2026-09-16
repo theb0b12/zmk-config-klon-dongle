@@ -1,10 +1,6 @@
 #include "klon_dongle.dtsi"
 
 / {
-    chosen {
-        zmk,kscan = &kscan_dongle;
-    };
-
     kscan_dongle: kscan_dongle {
         compatible = "zmk,kscan-mock";
         columns = <0>;
