@@ -1,4 +1,4 @@
-#include "klon.dtsi"
+#include "klon_dongle.dtsi"
 
 / {
     kscan0: kscan0 {
@@ -25,7 +25,7 @@
     };
 };
 
-&physical_layout_klon {
+&physical_layout_klon_dongle {
     kscan = <&kscan0>;
 };
 
